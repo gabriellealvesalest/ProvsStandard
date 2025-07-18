@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativo de Planos: Padrão vs. Profissional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        .header-cell {
+            background-color: #1f2937;
+            color: #ffffff;
+        }
+        .feature-category {
+            background-color: #e5e7eb;
+            color: #1f2937;
+            font-weight: 600; /* Ensuring bold for categories */
+        }
+        .feature-row:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .feature-row:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .check-icon {
+            color: #10b981; /* Green for available features */
+        }
+        .limit-icon {
+            color: #f59e0b; /* Amber for limited features */
+        }
+        .not-available-icon {
+            color: #ef4444; /* Red for not available features */
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="container mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        <header class="p-6 text-center header-cell rounded-t-lg">
+            <h1 class="text-3xl font-bold mb-2">Comparativo de Planos monday.com</h1>
+            <p class="text-lg">Plano Padrão vs. Plano Profissional</p>
+        </header>
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Funcionalidade</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Plano Padrão</th>
+                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Plano Profissional</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+
+                    <!-- Essenciais -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">Essenciais</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Elementos</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Ilimitado</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Ilimitado</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Armazenamento de arquivos</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">20 GB <span class="limit-icon text-xs">(Limitado)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">100 GB</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Log de atividades</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">6 meses <span class="limit-icon text-xs">(Limitado)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">1 ano</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Quadros ilimitados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Documentos ilimitados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mais de 20 tipos de colunas</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mais de 200 templates</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Aplicativos iOS e Android</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mensagens e atualizações ilimitadas</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Integrações</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">250 ações/mês <span class="limit-icon text-xs">(Limitado)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">25.000 ações/mês</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Automações</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">250 ações/mês <span class="limit-icon text-xs">(Limitado)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">25.000 ações/mês</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Visualizadores gratuitos ilimitados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+
+                    <!-- monday AI -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">monday AI</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">monday AI</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Créditos de IA</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">500 créditos</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">500 créditos</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-900">Complemento de créditos de IA</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Elegível</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Elegível</td>
+                    </tr>
+
+                    <!-- Colaboração -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">Colaboração</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Documentos incorporados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Seção de atualizações</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-900">Integração com o Zoom</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Acesso para convidados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">4 convidados pelo valor de 1 usuário</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Ilimitado</td>
+                    </tr>
+
+                    <!-- Produtividade -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">Produtividade</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Formulários compartilháveis</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Mais formulários personalizados com a sua marca</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Notificações personalizáveis</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Campos personalizados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Integrações premium</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Coluna de controle de tempo</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Coluna de fórmula</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Coluna de dependência</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Volume de trabalho</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+
+                    <!-- Visualizações e relatórios -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">Visualizações e relatórios</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Log de atividades</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">6 meses <span class="limit-icon text-xs">(Limitado)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">1 ano</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Painéis ilimitados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Combine até 5 quadros</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">Combine até 20 quadros</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Visualização Kanban</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Cronograma</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Calendário</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Mapa</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Visualização de gráfico (widget)</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+
+                    <!-- Suporte -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">Suporte</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Banco de conhecimentos de autosserviço</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Suporte ao cliente 24/7</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Webinars diários ao vivo</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Gerente de sucesso do cliente exclusivo*</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Acordo de Nível de Serviço (ANS) - 99,9% de tempo de atividade</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+
+                    <!-- Segurança e Privacidade -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">Segurança e Privacidade</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Conformidade com SOC 2 Tipo II</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Autenticação de dois fatores</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Quadros e documentos privados</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Autenticação Google</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+
+                    <!-- Administração e Controle -->
+                    <tr class="feature-category">
+                        <td colspan="3" class="px-6 py-3 text-left text-sm font-bold pl-10">Administração e Controle</td>
+                    </tr>
+                    <tr class="feature-row">
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium text-gray-900">Administradores do quadro</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500"><span class="not-available-icon text-xl">&times;</span> <span class="text-xs">(Não disponível)</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-left text-sm text-gray-500">&#10003;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer class="p-6 text-center text-sm text-gray-600">
+            <p>Legenda: &#10003; = Disponível, <span class="limit-icon">&#9679;</span> = Limitado, <span class="not-available-icon">&times;</span> = Não disponível</p>
+            <p class="mt-2">Este material é referente ao monday.com e pertence à Alest Consultoria. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
